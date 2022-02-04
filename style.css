@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+p {
+  font-size: 18px;
+}
+.container {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1460px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+.container .card {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card .main .head {
+  position: relative;
+}
+.head .over {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.5);
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
+
+.head .over img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head:hover .over {
+  display: block;
+}
+.card .main {
+  width: 300px;
+}
+.card .main h2 {
+  padding: 20px 0;
+}
+.card .main a {
+  color: white;
+}
+.card .main a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .price {
+  width: 300px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .price img {
+  margin-right: 5px;
+}
+.card .price .value {
+  color: hsl(178, 100%, 50%);
+}
+img.equilibrium {
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+}
+.card .footer {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid hsl(215, 51%, 70%);
+}
+.card .footer img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card .footer a {
+  color: white;
+}
+
+.card .footer a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.sign p {
+  color: white;
+  font-size: 10px;
+}
+.sign a {
+  color: hsl(178, 100%, 50%);
+}
